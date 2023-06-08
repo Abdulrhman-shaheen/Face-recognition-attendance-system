@@ -6,10 +6,10 @@ import datetime
 import pandas as pd
 import sys
 import time
-
+import os 
 
 # Get a form of dictionary to get the IDS
-excel_file = 'Excel Data\Data.xlsx'
+excel_file = 'Excel Data\Data.ods'
 df = pd.read_excel(excel_file)
 name_to_id = dict(zip(df["Name"], df["ID"]))
 
@@ -100,8 +100,10 @@ while True:
                 name = known_face_names[best_match_index]
 
             face_names.append(name)
-
-            filename = f"{current_date}.txt"
+            filen = f"{current_date}.txt"
+            directory_path = "Output"
+            filename = os.path.join(directory_path, filen)
+           
             existing_variables = set()
 
             # Making sure 4 seconds have passed with the same person on the camera to avoid inaccuracies

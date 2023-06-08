@@ -32,14 +32,6 @@ Shaheen_face_encoding = face_recognition.face_encodings(Shaeen_image)[0]
 hendy_image= face_recognition.load_image_file(r'Known Faces\Abo Hendy.jpg   ')
 hendy_face_encoding= face_recognition.face_encodings(hendy_image)[0]
 
-Nora_image = face_recognition.load_image_file(r'Known Faces\Nora.jpg')
-Nora_face_encoding= face_recognition.face_encodings(Nora_image)[0]
-
-Nada_image = face_recognition.load_image_file(r'Known Faces\Nada.jpg')
-Nada_face_encoding= face_recognition.face_encodings(Nada_image)[0]
-
-Menna_image = face_recognition.load_image_file(r'Known Faces\Menna.jpg')
-Menna_face_encoding= face_recognition.face_encodings(Menna_image)[0]
 
 Yehia_image = face_recognition.load_image_file(r'Known Faces\Yehia.jpg')
 Yehia_face_encoding= face_recognition.face_encodings(Yehia_image)[0]
@@ -47,29 +39,21 @@ Yehia_face_encoding= face_recognition.face_encodings(Yehia_image)[0]
 David_image = face_recognition.load_image_file(r'Known Faces\David.jpg')
 David_face_encoding= face_recognition.face_encodings(David_image)[0]
 
-Trial_image = face_recognition.load_image_file(r'Known Faces\Haytham.jpg')
-Trial_face_encoding = face_recognition.face_encodings(Trial_image)[0]
+
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
     Shaheen_face_encoding,
     hendy_face_encoding,
-    Nora_face_encoding,
-    Nada_face_encoding,
-    Menna_face_encoding,
     Yehia_face_encoding,
     David_face_encoding,
-    Trial_face_encoding
+
 ]
 known_face_names = [
     "Abdelrhman Shaheen",
     "Ali AboHendy",
-    "Nora Wael",
-    "Nada Mubarak",
-    "Menna Ramadan",
     "Mohamed Yehia",
     "David George",
-    "Dr. Haytham"
 ]
 
 # Initialize some variables
